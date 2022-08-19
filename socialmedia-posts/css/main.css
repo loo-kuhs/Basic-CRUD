@@ -10,9 +10,24 @@ body {
   margin: 0 50px;
 }
 
+h1 {
+  padding-top: 150px;
+  text-align: center;
+}
+
 .container {
   display: flex;
   gap: 50px;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;;
+  height: 50vh;
+}
+
+p {
+  width: 250px;
+  padding: 10px;
+  word-wrap: break-word;
 }
 
 #posts {
@@ -36,4 +51,9 @@ i {
 
 #msg {
   color: red;
+}
+
+button[type="submit"] {
+  padding: 10px;
+
 }
