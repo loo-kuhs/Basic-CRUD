@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
 }
 
 body {
@@ -23,4 +23,62 @@ body {
   border: 5px solid #abcea1;
   border-radius: 8px;
   padding: 15px;
+}
+
+#addNew {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(171, 206, 161, 0.35);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fa-plus {
+  background-color: #abcea1;
+  padding: 3px;
+  border-radius: 10px;
+  color: #36ad68;
+}
+
+#msg {
+  color: #ff0000;
+}
+
+#tasks {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+#tasks div {
+  border: 3px solid #abcea1;
+  background-color: #e2eede;
+  border-radius: 6px;
+  padding: 5px;
+  display: grid;
+  grid-template: 4px;
+}
+
+#tasks div:hover {
+  border: 3px solid #a1cec7;
+  background-color: #edeede;
+}
+
+#tasks div .options {
+  justify-self: center;
+  display: flex;
+  gap: 15px;
+}
+
+#tasks div .options i {
+  cursor: pointer;
+}
+
+#tasks div .options .fa-trash-alt {
+  color: #c52727;
+}
+#tasks div .options .fa-edit {
+  color: #27c5ab;
 }
